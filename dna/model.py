@@ -1,5 +1,5 @@
 import tensorflow as tf
-from architecture import Weights, Biases, Activation
+from dna.architecture import Weights, Biases, Activation
 
 
 

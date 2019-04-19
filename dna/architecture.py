@@ -17,7 +17,7 @@ class Activation:
 
 
 
-def generator(self, transformations, weights_creator, biases_creator):
+def generate(transformations, weights_creator, biases_creator):
     result = []
     for transformation in transformations:
         if isinstance(transformation, int):
@@ -27,3 +27,4 @@ def generator(self, transformations, weights_creator, biases_creator):
             result.append(Activation(function=transformation))
         else:
             raise TypeError('unrecognized transformation type')
+    return result

@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from model import Model
+from dna.model import Model
 
 
 
