@@ -7,7 +7,7 @@ class Weights:
         self.initializer = initializer
 
 
-    def __call__(self, num_inputs, num_outputs, representation_id):
+    def __call__(self, num_inputs, num_outputs):
         return tf.Variable(self.initializer(shape=(num_inputs, num_outputs)))
 
 
@@ -17,5 +17,5 @@ class Biases:
         self.initializer = initializer
 
 
-    def __call__(self, num_units, representation_id):
+    def __call__(self, num_units):
         return tf.Variable(self.initializer(shape=(num_units,)))
